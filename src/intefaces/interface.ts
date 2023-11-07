@@ -1,3 +1,5 @@
+import { Token } from "typescript";
+
 export interface Todo{
     id: string;
     todo: string;
@@ -10,7 +12,7 @@ export interface Todos{
 }
 
 export interface TodoCard{
-    todo:string
+    todo:Todo;
     todos:Todo[];
     setTodos:React.Dispatch<React.SetStateAction<Todo[]>>
 }
